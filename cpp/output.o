@@ -1,0 +1,72 @@
+---------------------------
+SECTION TABLE:
+---------------------------
+NUM SECTION OFFSET  SIZE
+ 0     ivt      0    16
+ 1     isr      0    63
+
+---------------------------
+SYMBOL TABLE:
+---------------------------
+NUM          SYMBOL SECTION VALUE  SCOPE
+ 0                     UND     0   local
+ 1             ivt     ivt     0   local
+ 2             isr     isr     0   local
+ 3         myStart     UND     0   global
+ 4       myCounter     UND     0   global
+ 5        term_out     ABS  -256   local
+ 6         term_in     ABS  -254   local
+ 7       asciiCode     ABS    84   local
+ 8       isr_reset     isr     0   local
+ 9       isr_timer     isr     5   local
+10    isr_terminal     isr    22   local
+
+**************************************************************
+
+---------------------------
+ivt
+---------------------------
+00 00 
+00 00 
+05 00 
+16 00 
+00 00 00 00 00 00 00 00 
+---------------------------
+isr
+---------------------------
+50 f0 00 00 00 
+b0 06 12 
+a0 00 00 54 00 
+b0 00 04 00 ff 
+a0 06 42 
+20 
+b0 06 12 
+b0 16 12 
+a0 00 04 02 ff 
+b0 00 04 00 ff 
+a0 07 03 00 00 
+a0 10 00 01 00 
+70 01 
+b0 00 04 00 00 
+a0 16 42 
+a0 06 42 
+20 
+
+**************************************************************
+
+---------------------------
+ivt RELOCATION TABLE:
+---------------------------
+NUM  OFFSET     TYPE   SYM_NUM
+ 0       0   R_386_16       2
+ 1       4   R_386_16       2
+ 2       6   R_386_16       2
+
+---------------------------
+isr RELOCATION TABLE:
+---------------------------
+NUM  OFFSET     TYPE   SYM_NUM
+ 0       3   R_386_16       3
+ 1      41 R_386_PC16       4
+ 2      53   R_386_16       4
+
