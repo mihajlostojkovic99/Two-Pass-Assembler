@@ -1,4 +1,4 @@
-#include "../h/directives.h"
+#include "directives.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>

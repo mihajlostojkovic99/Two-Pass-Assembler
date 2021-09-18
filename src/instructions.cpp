@@ -1,5 +1,5 @@
-#include "../h/instructions.h"
-#include "../h/directives.h"
+#include "instructions.h"
+#include "directives.h"
 #include <stdio.h>
 #include <string>
 #include <iostream>

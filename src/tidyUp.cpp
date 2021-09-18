@@ -1,4 +1,4 @@
-#include "../h/tidyUp.h"
+#include "tidyUp.h"
 #include <regex>
 #include <stdio.h>
 #include <iostream>

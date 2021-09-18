@@ -5,10 +5,10 @@
 #include <fstream>
 #include <list>
 #include <vector>
-#include "../h/firstPass.h"
-#include "../h/secondPass.h"
-#include "../h/tables.h"
-#include "../h/printing.h"
+#include "firstPass.h"
+#include "secondPass.h"
+#include "tables.h"
+#include "printing.h"
 using namespace std;
 
 string currSection = "";

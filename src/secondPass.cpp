@@ -1,8 +1,8 @@
-#include "../h/firstPass.h"
-#include "../h/tidyUp.h"
-#include "../h/directives.h"
-#include "../h/instructions.h"
-#include "../h/labels.h"
+#include "firstPass.h"
+#include "tidyUp.h"
+#include "directives.h"
+#include "instructions.h"
+#include "labels.h"
 #include <regex>
 #include <fstream>
 #include <string>

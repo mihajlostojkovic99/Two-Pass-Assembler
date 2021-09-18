@@ -1,4 +1,4 @@
-#include "../h/printing.h"
+#include "printing.h"
 #include <iostream>
 #include <iomanip>
 #include <fstream>

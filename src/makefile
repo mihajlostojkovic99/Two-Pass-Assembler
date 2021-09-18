@@ -1,0 +1,2 @@
+assembler:
+	g++ -I ./inc ./src/main.cpp ./src/directives.cpp ./src/firstPass.cpp ./src/instructions.cpp ./src/labels.cpp ./src/printing.cpp ./src/tables.cpp ./src/secondPass.cpp ./src/tidyUp.cpp -o assembler
